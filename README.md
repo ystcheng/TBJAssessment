@@ -1,71 +1,77 @@
-# Getting Started with Create React App
+# Getting Started
+There are 2 methods of setting up and running the attempted solution.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Docker (Recommend)
+2. Normal Way of project installation
 
-## Available Scripts
+## Method 1: Docker (Highly Recommended)
+This is the recommended method to run the solution since by using Docker. It ensures that we won't run into some weird dependencies conflict/issues.
 
-In the project directory, you can run:
+1. Clone the repository
+```
+git clone https://github.com/ystcheng/TBJAssessment.git
+```
+2. Install Docker if it hasn't been installed yet. You can find the download page here:
+```
+https://docs.docker.com/get-docker/
+```
+3. Open up a terminal and ``cd`` into the project's main level:
+```
+cd TBJAssessment
+```
+ where you can see the following files:
+```
+backend.Dockerfile
+frontend.Dockerfile
+docker-compose.yml
+```
+4. Then in the terminal, type in the following command to build the project:
+```
+docker compose build 
+```
+5. To start the project simply type in the command:
+```
+docker compose up
+```
 
-### `npm start`
+The attempted solution can now be viewed by navigating to [http://localhost:3000](http://localhost:3000)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**<font size="3">
+Note that from steps 4 to 5 the command must be executed in the same project folder level as described in step 3. 
+</font>**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Method 2: Normal Way of installation
+**<font size="3">
+Note that before we continue with the installation, ensure that the following python and node version is installed:
+</font>**
+```
+python >= 3.8
+node >= 20.0
+```
+The solution might still work if the requirements aren't met but no promises there since I've developed the solution specifically on python 3.8 and node 20.0 platform
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# TBJAssessment
+1. Clone the repository
+```
+git clone https://github.com/ystcheng/TBJAssessment.git
+```
+2. Open a terminal and ``cd`` into the project folder:
+```
+cd TBJAssessment
+```
+3. Run the following command to install the dependencies used by the python backend:
+```
+pip install requirements.txt
+```
+4. Afterwards, ``cd`` into the folder: ``frontend`` and run the command to install the frontend dependencies:
+```
+npm install --legacy-peer-deps
+```
+5. To run the project, first navigate to the ``frontend`` folder and type in the command:
+```
+npm start
+```
+then navigate to the ``backend`` folder and type in the command:
+```
+python manage.py runserver
+```
+Finally, the attempted solution can now be viewed by navigating to [http://localhost:3000](http://localhost:3000)

@@ -1,0 +1,207 @@
+div.news__layout-style {
+  margin-top: 25px;
+}
+
+div.news__layout-style > * {
+  padding: 0;
+}
+
+div.news__layout-style > h4 {
+  font-weight: 600;
+}
+
+div.news__layout-style > div > div:nth-child(n) {
+  padding-right: 0;
+}
+
+div.card.news-card-style {
+  border: none
+}
+
+div.card.news-card-style .news-card-text-style {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden; 
+
+  text-decoration: none;
+  color: #244d87;
+  font-weight: 600;
+
+  line-height: 20px;
+}
+
+div.card.news-card-style small {
+  color: black;
+  font-weight: 600;
+}
+
+img.division-team-logo {
+  width: 50px;
+  height: 40px;
+  padding-right: 10px;
+}
+
+.react-tabs__tab-list-custom {
+  margin: 0 0 10px;
+  padding: 0 10px 0 0;
+  width: fit-content;
+  border: 1px solid white;
+  padding: 4px;
+  border-radius: 25px;
+  background-color: white;
+  margin-left: auto;
+  position: relative;
+  bottom: 1in;
+}
+
+.react-tabs__tab-custom {
+  display: inline-block;
+  /* border: 1px solid white; */
+  bottom: -1px;
+  position: relative;
+  list-style: none;
+  padding: 6px 23px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-right: 5px;
+  color: #3e9fca;
+  font-weight: 600;
+}
+
+.react-tabs__tab--selected-custom {
+  background: #3e9fca;
+  border-color: white;
+  color: white;
+  border-radius: 25px;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+  position: relative;
+  bottom: 5%;
+}
+
+/* #region Player Header Style */
+div.player-header {
+  display: flex;
+  line-height: 150%;
+  font-weight: 600;
+}
+
+div.player-header > div:nth-child(2) {
+  padding: 35px 0px 20px 20px;
+}
+
+div.player-header > div:nth-child(2) > span {
+  font-size: 30px;
+}
+
+div.player-header > div:nth-child(2) > div {
+  font-size: 20px;
+}
+
+div.player-header > div:nth-child(2) > div > span:nth-child(1) {
+  color: #3e9fca;
+  padding-right: 20px;
+}
+
+div.player-header > div:nth-child(2) > div > span:nth-child(2) {
+  cursor: pointer;
+}
+
+div.player-header > div:nth-child(3) {
+  margin-left: auto;
+  padding: 40px 0px;
+  line-height: 120%;
+  display: flex;
+}
+
+div.player-header > div:nth-child(3) > div:not(:first-child) {
+  margin-left: 35px;
+}
+
+div.player-header > div:nth-child(3) > div:nth-child(n) > span:first-child {
+  color: #3e9fca;
+  font-size: 16px;
+}
+
+div.player-header > div:nth-child(3) > div:nth-child(n) > span:last-child {
+  font-size: 20px;
+}
+/* #endregion  */
+
+/* #region Division Style */
+div.division__layout-style > div > div.col:first-child { 
+  margin-right: 25px;
+  /* padding-left: 0; */
+}
+
+div.division__layout-style > div > div.col:nth-child(n) {
+  padding-right: 0;
+}
+
+div.division__layout-style > h4 {
+  font-weight: 600;
+  padding-left: 0;
+}
+
+div.division__layout-style  div.division-table__layout-style table td:first-child {
+  color: #244d87;
+}
+
+div.division__layout-style table > tbody > tr {
+  cursor: pointer;
+}
+
+div.division__layout-style table > thead > tr > th:not(:first-child) {
+  text-align: center;
+}
+
+div.division__layout-style table > tbody > tr:nth-child(n) > td:not(:first-child) {
+  text-align: center;
+}
+
+/* #endregion */
+
+/* #region Team Table Style */
+div.team-table__style table > tbody > tr {
+  cursor: pointer;
+}
+
+div.team-table__style table > tbody > tr:nth-child(n) > td:nth-child(2) {
+  color: #3e9fca;
+}
+
+div.team-table__style table > tbody > tr:nth-child(n) > td:nth-child(3) {
+  color: #244d87;
+}
+
+div.team-table__style table > tbody > tr:nth-child(n) > td:not(:nth-child(3)) {
+  text-align: center;
+}
+
+div.team-table__style table > thead > tr > th:not(:nth-child(3)) {
+  text-align: center;
+}
+/* #endregion */
+
+div.player-table__layout-style table > thead > tr > th:not(:nth-child(2)) {
+  text-align: center;
+}
+
+div.player-table__layout-style table > tbody > tr:nth-child(n) > td:not(:nth-child(2)) {
+  text-align: center;
+}
+
+div.player-table__layout-style table > tbody > tr:nth-child(n) > td:nth-child(2) {
+  color: #244d87;
+}
+
+.loading-style__preset {
+  display: block;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 100px 0px;
+}

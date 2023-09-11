@@ -1,0 +1,93 @@
+img.table-team-logo {
+  width: 50px;
+  height: 40px;
+  padding-right: 10px;
+}
+
+/* custom button group style */
+div.custom-button-style {
+  width: fit-content;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 5px 1px;
+  background-color: white;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.custom-button-style > span {
+  margin: 0px 5px 0px 5px;
+}
+
+div.custom-button-style > span:nth-child(n) > button {
+  border-radius: 30px;
+  background-color: white;
+  border: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  min-width: 100px;
+}
+
+div.custom-button-style > span:nth-child(n) > button:active:focus {
+  color: white;
+  background-color: #3e9fca;
+}
+
+div.custom-button-style > span:nth-child(n) > button.custom-button-style__not_active {
+  color: #3e9fca;
+
+}
+
+div.custom-button-style > span:nth-child(n) > button.custom-button-style__active {
+  color: white;
+  background-color: #3e9fca;
+}
+
+.react-tabs__tab-list-leaderboard {
+  margin: 0 0 10px;
+  padding: 0 10px 0 0;
+  width: fit-content;
+  border: 1px solid white;
+  padding: 4px;
+  border-radius: 25px;
+  background-color: white;
+  margin-left: auto;
+  position: relative;
+  bottom: 3%;
+}
+
+.react-tabs__tab-leaderboard {
+  display: inline-block;
+  /* border: 1px solid white; */
+  bottom: -1px;
+  position: relative;
+  list-style: none;
+  padding: 6px 23px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-right: 5px;
+  color: #3e9fca;
+  font-weight: 600;
+}
+
+.react-tabs__tab--selected-leaderboard {
+  background: #3e9fca;
+  border-color: white;
+  color: white;
+  border-radius: 25px;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+  /* position: relative;
+  bottom: 1%; */
+}
+
+div.leaderboard-table__style table > thead > tr > th:not(:nth-child(2), :nth-child(3)) {
+  text-align: center;
+}
+
+div.leaderboard-table__style table > tbody > tr > td:not(:nth-child(2), :nth-child(3)) {
+  text-align: center;
+}

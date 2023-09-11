@@ -1,0 +1,29 @@
+tr.header-class-color > * {
+  background-color: #3e9fca !important;
+  border-color: #3e9fca;
+  color: white !important;
+}
+
+table.table-text-align-center > tbody > *{
+  text-align: left;
+}
+
+.table-rm-padding-right {
+  padding-right: 0px !important;
+}
+
+.table-wrapper {
+  padding-right: 0px;
+  width: 100%;
+  overflow-x: scroll; 
+  display: block;
+}
+
+.table-scroll {
+  width: 100%
+}
+
+.custom-table__preset-style {
+  font-weight: 600;
+  padding: 0 !important;
+}

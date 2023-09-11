@@ -1,0 +1,18 @@
+nav > .container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+img.navbar-logo {
+  height: 40px;
+  width: auto;
+}
+
+a.nav-link.active {
+  border-top: 3px solid white;
+  color: white;
+}
+
+a.nav-link {
+  font-weight: 600;
+}
